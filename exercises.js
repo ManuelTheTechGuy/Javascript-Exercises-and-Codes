@@ -126,8 +126,9 @@ console.log(joinArray(["Red", "Green", "Blue"]));
 
 // Ex.9: Sort an Array
 const sortArray = (array) => {
-  const sorted = array.sort();
-  return sorted;
+  const sorted = array.sort((a, b) => a - b);
+  console.log(sorted);
+  process.exit();
 };
 
-console.log(sortArray([3, 8, 7, 6, 5, -4, 3, 2, 1]));
+sortArray([3, 8, 7, 6, 5, -4, 3, 2, 1]);

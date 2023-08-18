@@ -52,3 +52,5 @@ Object.defineProperty(computerInfo, "hasWarranty", {
 // Object.getPrototypeOf(computerInfo).batteryLife = "100%";
 console.log(Object.keys(computerInfo));
 console.log(Object.values(computerInfo));
+
+console.log(Object.entries(computerInfo));

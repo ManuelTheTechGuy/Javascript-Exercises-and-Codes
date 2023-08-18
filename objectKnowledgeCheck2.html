@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <section class="preview"></section>
+  </body>
+  <script>
+    let bandInfo =
+      "Coldplay, the British rock band formed in London in 1996, has become a global sensation with their distinct blend of alternative rock, pop, and electronic elements. Comprising Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion, their emotive melodies and introspective lyrics have resonated with audiences since their debut. Their first album, 'Parachutes,' released on July 10, 2000, introduced their signature sound and featured hits like 'Yellow.' Coldplay's ability to evolve while maintaining their core identity has propelled them to continued success, making them one of the most enduring and influential bands in modern music. Beyond their musical impact, Coldplay's philanthropic endeavors further demonstrate their lasting legacy in both the artistic and humanitarian spheres.";
+
+    // Add your code here
+    const myBand = {
+      name: "Coldplay",
+      nationality: "American",
+      genre: ["Alternative Rock", "Pop Rock"],
+      members: 5,
+      formed: 1997,
+      split: false,
+      albums: [
+        { name: "Parachutes", released: 2000 },
+        { name: "A Rush Of Blood To The Head", released: 2002 },
+      ],
+    };
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector("section");
+    let para1 = document.createElement("p");
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+</html>

@@ -11,11 +11,10 @@ const divideTwoNumbers = () => {
   document.getElementById("result").innerText = result;
 };
 
-
 const displayMsg = () => {
-  console.log('Hello World');
-}
+  console.log("Hello World");
+};
 
 // setTimeout(displayMsg, 5000);
 const timerId2 = setInterval(displayMsg, 1000);
-console.log((timerId2._onTimeout));
+console.log(timerId2._onTimeout);
